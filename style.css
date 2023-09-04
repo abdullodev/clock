@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(rgb(0, 191, 255), white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.clock {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 10px solid rgb(3, 135, 142);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  position: relative;
+}
+.clock::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  background-color: darkcyan;
+}
+.clock .num {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  font-weight: 600;
+}
+.clock .num::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 2px;
+  height: 12px;
+  content: "";
+  background-color: rgb(24, 23, 23);
+}
+.num1 {
+  transform: rotate(30deg);
+}
+.num1 span {
+  transform: rotate(-30deg);
+  display: inline-block;
+}
+.num2 {
+  transform: rotate(60deg);
+}
+.num2 span {
+  transform: rotate(-60deg);
+  display: inline-block;
+}
+.num3 {
+  transform: rotate(90deg);
+}
+.num3 span {
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+.num4 {
+  transform: rotate(120deg);
+}
+.num4 span {
+  transform: rotate(-120deg);
+  display: inline-block;
+}
+.num5 {
+  transform: rotate(150deg);
+}
+.num5 span {
+  transform: rotate(-150deg);
+  display: inline-block;
+}
+.num6 {
+  transform: rotate(180deg);
+}
+.num6 span {
+  transform: rotate(-180deg);
+  display: inline-block;
+}
+.num7 {
+  transform: rotate(210deg);
+}
+.num7 span {
+  transform: rotate(-210deg);
+  display: inline-block;
+}
+.num8 {
+  transform: rotate(240deg);
+}
+.num8 span {
+  transform: rotate(-240deg);
+  display: inline-block;
+}
+.num9 {
+  transform: rotate(270deg);
+}
+.num9 span {
+  transform: rotate(-270deg);
+  display: inline-block;
+}
+.num10 {
+  transform: rotate(300deg);
+}
+.num10 span {
+  transform: rotate(-300deg);
+  display: inline-block;
+}
+.num11 {
+  transform: rotate(330deg);
+}
+.num11 span {
+  transform: rotate(-330deg);
+  display: inline-block;
+}
+
+.hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hand div {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  height: 36%;
+  background-color: rgb(157, 151, 151);
+  width: 4px;
+  border-radius: 6px 6px 0 0;
+}
+
+#secund {
+  transform: rotate(100deg);
+}
+#secund div {
+  width: 2px;
+}
+#min div {
+  height: 33%;
+  background-color: darkcyan;
+}
+#hour div {
+  height: 25%;
+  background-color: darkcyan;
+}
+#hour {
+  transform: rotate(120deg);
+}
+#min {
+  transform: rotate(34deg);
+}

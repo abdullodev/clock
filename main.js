@@ -10,9 +10,6 @@ function onTime() {
   secund.style.transform = `rotate(${s * 6}deg)`;
   min.style.transform = `rotate(${m * 6}deg)`;
   hour.style.transform = `rotate(${h * 30 + m / 2}deg)`;
-
-  let sound = new Audio("sound.mp3");
-  sound.play();
 }
 
 onTime();
